@@ -1,0 +1,93 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Argentina Financial, Tax & Regulatory Data API (ARCA Monotributo, Dólar, IPC, UMA/JUS)",
+    "version": "1.0.0",
+    "description": "Automated live JSON API providing Argentine USD exchange rates (Oficial, Blue, MEP, CCL, Cripto, Tarjeta) with FX spread calculations, INDEC monthly inflation (IPC) & BCRA policy rates, 2026 ARCA Monotributo tax brackets (Categories A–K), Legal & Accounting regulatory units (UMA CPACF, UMA CABA, JUS PBA, SMVM), and National Holidays.",
+    "contact": {
+      "name": "Sebastián Iglesias",
+      "url": "https://sebiglesias.com.ar/ar-data-api/",
+      "email": "me@sebiglesias.com.ar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://sebiglesias.com.ar/ar-data-api",
+      "description": "Production Edge Origin"
+    }
+  ],
+  "paths": {
+    "/v1/all.json": {
+      "get": {
+        "summary": "Get All Argentina Financial, Tax & Regulatory Data",
+        "operationId": "getAllData",
+        "tags": ["Consolidated"],
+        "responses": {
+          "200": {
+            "description": "Consolidated JSON payload with Dólar, IPC Inflation, Monotributo A-K, Legal Units (UMA/JUS), and Holidays."
+          }
+        }
+      }
+    },
+    "/v1/dolar.json": {
+      "get": {
+        "summary": "Get Live USD Exchange Rates & FX Spreads (Oficial, Blue, MEP, CCL, Cripto, Tarjeta)",
+        "operationId": "getDolarRates",
+        "tags": ["FX & Macroeconomics"],
+        "responses": {
+          "200": {
+            "description": "Live ARS/USD exchange rates, bid/ask spreads, and gap percentages vs Official rate."
+          }
+        }
+      }
+    },
+    "/v1/inflacion.json": {
+      "get": {
+        "summary": "Get INDEC Monthly Inflation (IPC) & BCRA Monetary Policy Rates",
+        "operationId": "getInflationData",
+        "tags": ["FX & Macroeconomics"],
+        "responses": {
+          "200": {
+            "description": "Recent monthly IPC inflation series and BCRA TNA benchmark rates."
+          }
+        }
+      }
+    },
+    "/v1/monotributo.json": {
+      "get": {
+        "summary": "Get 2026 ARCA Monotributo Categories, Income Caps & Monthly Quotas (A to K)",
+        "operationId": "getMonotributoBrackets",
+        "tags": ["Tax & Regulatory"],
+        "responses": {
+          "200": {
+            "description": "Complete ARCA Monotributo table from Category A to K including annual gross income caps, SIPA pension, Obra Social, and total monthly payment."
+          }
+        }
+      }
+    },
+    "/v1/unidades-legales.json": {
+      "get": {
+        "summary": "Get Legal & Labor Regulatory Units (UMA CPACF, UMA CABA, JUS PBA, SMVM)",
+        "operationId": "getLegalUnits",
+        "tags": ["Tax & Regulatory"],
+        "responses": {
+          "200": {
+            "description": "Current ARS values for UMA (Ley 27.423 & Ley 5.134), JUS Provincia de Buenos Aires (Ley 14.967), Salario Mínimo Vital y Móvil, and SIPA max taxable base."
+          }
+        }
+      }
+    },
+    "/v1/feriados.json": {
+      "get": {
+        "summary": "Get Argentine National Holidays Calendar (Inamovibles & Trasladables)",
+        "operationId": "getHolidays",
+        "tags": ["Calendar"],
+        "responses": {
+          "200": {
+            "description": "List of official Argentine national holidays for working-day calculations."
+          }
+        }
+      }
+    }
+  }
+}

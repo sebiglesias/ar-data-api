@@ -1,0 +1,36 @@
+name: Auto-Update Argentina Financial & Regulatory Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch live FX, IPC, Monotributo & Regulatory Data
+        run: python3 scripts/update_data.py
+
+      - name: Commit & Push Updated JSON Endpoints
+        run: |
+          git config user.name "ar-data-bot"
+          git config user.email "actions@github.com"
+          git add v1/*.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(data): auto-update v1 financial & regulatory JSON endpoints"
+            git push origin main
+          fi

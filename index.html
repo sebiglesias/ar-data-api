@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AR Data API — API JSON de Monotributo ARCA, Dólar, Inflación IPC, UMA/JUS y Feriados</title>
+<meta name="description" content="API JSON gratuita y para RapidAPI con datos actualizados de Argentina: Escalas Monotributo ARCA 2026 (A-K), Dólar (Oficial, Blue, MEP, CCL, Cripto), Inflación IPC INDEC, UMA CPACF, JUS PBA y Feriados.">
+<link rel="canonical" href="https://sebiglesias.com.ar/ar-data-api/">
+<link rel="alternate" hreflang="es" href="https://sebiglesias.com.ar/ar-data-api/">
+<link rel="alternate" hreflang="en" href="https://sebiglesias.com.ar/ar-data-api/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://sebiglesias.com.ar/ar-data-api/">
+<meta name="theme-color" content="#10B981">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Google tag (gtag.js) GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2BNDBQP0W7');
+</script>
+
+<!-- Google AdSense -->
+<meta name="google-adsense-account" content="ca-pub-3381238987477190">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14130F;
+    --surface: #1C1B16;
+    --surface2: #24221C;
+    --hairline: rgba(242,239,230,.12);
+    --hairline-strong: rgba(242,239,230,.24);
+    --text: #F2EFE6;
+    --muted: #9A968B;
+    --accent: #10B981;
+    --accent-ink: #14130F;
+    --amber: #F59E0B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--ink);
+    color: var(--text);
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1.5;
+    background-image:
+      linear-gradient(var(--hairline) 1px, transparent 1px),
+      linear-gradient(90deg, var(--hairline) 1px, transparent 1px);
+    background-size: 28px 28px;
+    min-height: 100vh;
+    padding: clamp(1rem, 4vw, 3rem);
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .backlink { color: var(--muted); text-decoration: none; font-size: .82rem; }
+  .backlink:hover { color: var(--accent); }
+  .badge {
+    background: rgba(16, 185, 129, .14);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: .7rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 99px;
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    line-height: .98;
+    letter-spacing: -.02em;
+    margin-bottom: .5rem;
+  }
+  h1 .accent { color: var(--accent); }
+  .sub {
+    color: var(--muted);
+    font-size: .85rem;
+    margin-bottom: 1.5rem;
+  }
+  .endpoint-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: .75rem;
+    margin: 1.2rem 0;
+  }
+  .ep-card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: .9rem;
+    cursor: pointer;
+    transition: border-color .15s, transform .15s;
+    text-align: left;
+  }
+  .ep-card:hover, .ep-card.active {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .ep-method {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-size: .65rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-bottom: .35rem;
+  }
+  .ep-path {
+    font-weight: 700;
+    font-size: .86rem;
+    color: var(--text);
+    display: block;
+    margin-bottom: .25rem;
+  }
+  .ep-desc {
+    font-size: .72rem;
+    color: var(--muted);
+  }
+  .console-box {
+    background: #0D0C09;
+    border: 1px solid var(--hairline-strong);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1.2rem 0 2rem;
+  }
+  .console-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--surface2);
+    padding: .6rem 1rem;
+    border-bottom: 1px solid var(--hairline);
+    font-size: .75rem;
+  }
+  .console-url { color: var(--accent); font-weight: 700; word-break: break-all; }
+  .btn-copy {
+    background: transparent;
+    border: 1px solid var(--hairline-strong);
+    color: var(--text);
+    font-family: "JetBrains Mono", monospace;
+    font-size: .7rem;
+    padding: 3px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .btn-copy:hover { border-color: var(--accent); color: var(--accent); }
+  pre {
+    padding: 1rem;
+    font-size: .76rem;
+    overflow-x: auto;
+    max-height: 420px;
+    color: #E2DFD5;
+  }
+  section {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--hairline);
+  }
+  h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.35rem;
+    margin-bottom: .6rem;
+  }
+  p { font-size: .84rem; color: var(--muted); margin-bottom: .7rem; }
+  .spec-links { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: .8rem; }
+  .spec-btn {
+    display: inline-block;
+    padding: .55rem 1rem;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    font-size: .78rem;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+  .spec-btn:hover { background: var(--accent); color: var(--accent-ink); }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--hairline);
+    font-size: .74rem;
+    color: var(--muted);
+  }
+  footer a { color: var(--text); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="topbar">
+    <a href="https://sebiglesias.com.ar" class="backlink">← sebiglesias.com.ar</a>
+    <span class="badge">● CRON ACTUALIZADO CADA 6H</span>
+  </div>
+
+  <header>
+    <h1>AR Data API<span class="accent">.</span></h1>
+    <p class="sub">API JSON de Datos Financieros, Impositivos y Regulatorios de Argentina (Monotributo ARCA 2026, Dólar &amp; Brechas, Inflación IPC, UMA/JUS y Feriados)</p>
+  </header>
+
+  <div class="spec-links">
+    <a class="spec-btn" href="v1/all.json" target="_blank">⚡ Abrir /v1/all.json</a>
+    <a class="spec-btn" href="openapi.json" target="_blank">📄 OpenAPI 3.0 Spec (RapidAPI)</a>
+    <a class="spec-btn" href="worker.js" target="_blank">☁️ Cloudflare Worker Proxy</a>
+  </div>
+
+  <div class="endpoint-grid">
+    <button type="button" class="ep-card active" onclick="loadEndpoint('v1/dolar.json', this)">
+      <span class="ep-method">GET</span>
+      <span class="ep-path">/v1/dolar.json</span>
+      <span class="ep-desc">Dólar Oficial, Blue, MEP, CCL, Cripto, Tarjeta + brechas cambiarias (%).</span>
+    </button>
+    <button type="button" class="ep-card" onclick="loadEndpoint('v1/monotributo.json', this)">
+      <span class="ep-method">GET</span>
+      <span class="ep-path">/v1/monotributo.json</span>
+      <span class="ep-desc">Escalas Monotributo ARCA 2026 (Categorías A a K), topes e impuesto integrado.</span>
+    </button>
+    <button type="button" class="ep-card" onclick="loadEndpoint('v1/unidades-legales.json', this)">
+      <span class="ep-method">GET</span>
+      <span class="ep-path">/v1/unidades-legales.json</span>
+      <span class="ep-desc">Valores vigentes UMA (CPACF / CSJN / CABA), JUS PBA, SMVM y Tope SIPA.</span>
+    </button>
+    <button type="button" class="ep-card" onclick="loadEndpoint('v1/inflacion.json', this)">
+      <span class="ep-method">GET</span>
+      <span class="ep-path">/v1/inflacion.json</span>
+      <span class="ep-desc">Serie IPC mensual INDEC y tasas de política monetaria / plazo fijo BCRA.</span>
+    </button>
+    <button type="button" class="ep-card" onclick="loadEndpoint('v1/feriados.json', this)">
+      <span class="ep-method">GET</span>
+      <span class="ep-path">/v1/feriados.json</span>
+      <span class="ep-desc">Calendario oficial de feriados nacionales inamovibles y trasladables 2026.</span>
+    </button>
+    <button type="button" class="ep-card" onclick="loadEndpoint('v1/all.json', this)">
+      <span class="ep-method">GET</span>
+      <span class="ep-path">/v1/all.json</span>
+      <span class="ep-desc">Snapshot consolidado en una sola llamada HTTP (ideal para dashboards).</span>
+    </button>
+  </div>
+
+  <div class="console-box">
+    <div class="console-header">
+      <span class="console-url" id="active-url">GET https://sebiglesias.com.ar/ar-data-api/v1/dolar.json</span>
+      <button type="button" class="btn-copy" id="btn-copy-curl" onclick="copyCurl()">📋 Copiar cURL</button>
+    </div>
+    <pre id="json-viewer">Cargando respuesta en vivo...</pre>
+  </div>
+
+  <section>
+    <h2>Integración Rápida (JavaScript / Python / cURL)</h2>
+    <p>Todos los endpoints se sirven con cabeceras CORS habilitadas (<code>Access-Control-Allow-Origin: *</code>) y actualización automática vía GitHub Actions cada 6 horas.</p>
+    <pre style="background:var(--surface);border:1px solid var(--hairline);border-radius:3px">const res = await fetch('https://sebiglesias.com.ar/ar-data-api/v1/all.json');
+const data = await res.json();
+console.log('Dólar MEP:', data.dolar.cotizaciones.bolsa.venta);
+console.log('Tope Monotributo Cat H:', data.monotributo.categorias[7].ingresos_brutos_anuales_max);
+console.log('Valor UMA CSJN:', data.unidades_legales.unidades.UMA_CPACF_CSJN.valor_ars);</pre>
+  </section>
+
+  <footer>
+    Desarrollado por <a href="https://sebiglesias.com.ar">Sebastián Iglesias</a> · Parte de la suite de herramientas financieras e impositivas de <a href="https://sebiglesias.com.ar">sebiglesias.com.ar</a>.
+  </footer>
+</main>
+
+<script>
+let currentEp = 'v1/dolar.json';
+async function loadEndpoint(ep, btn) {
+  currentEp = ep;
+  document.querySelectorAll('.ep-card').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  document.getElementById('active-url').textContent = `GET https://sebiglesias.com.ar/ar-data-api/${ep}`;
+  try {
+    const r = await fetch(ep);
+    const j = await r.json();
+    document.getElementById('json-viewer').textContent = JSON.stringify(j, null, 2);
+  } catch (e) {
+    document.getElementById('json-viewer').textContent = 'Error cargando endpoint: ' + e.message;
+  }
+}
+function copyCurl() {
+  const cmd = `curl -s https://sebiglesias.com.ar/ar-data-api/${currentEp} | jq .`;
+  navigator.clipboard.writeText(cmd);
+  const b = document.getElementById('btn-copy-curl');
+  b.textContent = '✅ Copiado';
+  setTimeout(() => { b.textContent = '📋 Copiar cURL'; }, 1800);
+}
+loadEndpoint('v1/dolar.json', document.querySelector('.ep-card'));
+</script>
+</body>
+</html>

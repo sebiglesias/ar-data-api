@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-11-02T01:21:31Z",
+  "currency": "ARS",
+  "unidades": {
+    "UMA_CPACF_CSJN": {
+      "nombre": "Unidad de Medida Arancelaria (Ley 27.423 - CSJN / CPACF)",
+      "valor_ars": 68985.0,
+      "jurisdiccion": "Nacional / CABA Federal"
+    },
+    "UMA_CABA_LEY5134": {
+      "nombre": "UMA Justicia CABA (Ley 5.134)",
+      "valor_ars": 71420.0,
+      "jurisdiccion": "CABA"
+    },
+    "JUS_PBA_SCBA": {
+      "nombre": "JUS Arancelario Provincia de Buenos Aires (Ley 14.967 - SCBA)",
+      "valor_ars": 35650.0,
+      "jurisdiccion": "Provincia de Buenos Aires"
+    },
+    "SMVM": {
+      "nombre": "Salario Mínimo, Vital y Móvil Mensual",
+      "valor_ars": 296832.0,
+      "valor_hora_ars": 1484.16,
+      "jurisdiccion": "Nacional"
+    },
+    "MOPRE_TOPE_PREVISIONAL": {
+      "nombre": "Base Imponible Máxima Aportes Previsionales SIPA",
+      "valor_ars": 2954090.0,
+      "jurisdiccion": "Nacional (ANSES)"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "updated_at": "2026-11-02T01:21:31Z",
+  "organisme": "ARCA (Agencia de Recaudación y Control Aduanero)",
+  "currency": "ARS",
+  "vigencia": "2026",
+  "categorias": [
+    {
+      "categoria": "A",
+      "ingresos_brutos_anuales_max": 7813063.45,
+      "impuesto_servicios": 3633.98,
+      "impuesto_ventas": 3633.98,
+      "aporte_sipa": 11871.01,
+      "obra_social": 16716.32,
+      "total_servicios": 32221.31,
+      "total_ventas": 32221.31
+    },
+    {
+      "categoria": "B",
+      "ingresos_brutos_anuales_max": 11447046.44,
+      "impuesto_servicios": 6904.57,
+      "impuesto_ventas": 6904.57,
+      "aporte_sipa": 13058.11,
+      "obra_social": 16716.32,
+      "total_servicios": 36679.0,
+      "total_ventas": 36679.0
+    },
+    {
+      "categoria": "C",
+      "ingresos_brutos_anuales_max": 16050091.57,
+      "impuesto_servicios": 11871.01,
+      "impuesto_ventas": 10901.95,
+      "aporte_sipa": 14363.92,
+      "obra_social": 16716.32,
+      "total_servicios": 42951.25,
+      "total_ventas": 41982.19
+    },
+    {
+      "categoria": "D",
+      "ingresos_brutos_anuales_max": 19926340.1,
+      "impuesto_servicios": 19381.24,
+      "impuesto_ventas": 18048.78,
+      "aporte_sipa": 15800.31,
+      "obra_social": 19865.77,
+      "total_servicios": 55047.32,
+      "total_ventas": 53714.86
+    },
+    {
+      "categoria": "E",
+      "ingresos_brutos_anuales_max": 23439190.34,
+      "impuesto_servicios": 36339.83,
+      "impuesto_ventas": 28829.6,
+      "aporte_sipa": 17380.34,
+      "obra_social": 24226.55,
+      "total_servicios": 77946.72,
+      "total_ventas": 70436.49
+    },
+    {
+      "categoria": "F",
+      "ingresos_brutos_anuales_max": 29374695.9,
+      "impuesto_servicios": 51118.03,
+      "impuesto_ventas": 37551.16,
+      "aporte_sipa": 19118.38,
+      "obra_social": 27860.53,
+      "total_servicios": 98096.94,
+      "total_ventas": 84530.07
+    },
+    {
+      "categoria": "G",
+      "ingresos_brutos_anuales_max": 35128502.31,
+      "impuesto_servicios": 92787.64,
+      "impuesto_ventas": 46515.0,
+      "aporte_sipa": 26765.73,
+      "obra_social": 30283.19,
+      "total_servicios": 149836.56,
+      "total_ventas": 103563.92
+    },
+    {
+      "categoria": "H",
+      "ingresos_brutos_anuales_max": 53298417.3,
+      "impuesto_servicios": 266492.09,
+      "impuesto_ventas": 133246.04,
+      "aporte_sipa": 37472.02,
+      "obra_social": 36339.83,
+      "total_servicios": 340303.94,
+      "total_ventas": 207057.89
+    },
+    {
+      "categoria": "I",
+      "ingresos_brutos_anuales_max": 59657887.55,
+      "impuesto_servicios": 529955.85,
+      "impuesto_ventas": 211982.34,
+      "aporte_sipa": 52460.83,
+      "obra_social": 44819.12,
+      "total_servicios": 627235.8,
+      "total_ventas": 309262.29
+    },
+    {
+      "categoria": "J",
+      "ingresos_brutos_anuales_max": 68318880.36,
+      "impuesto_servicios": 635947.02,
+      "impuesto_ventas": 254378.81,
+      "aporte_sipa": 73445.16,
+      "obra_social": 50270.1,
+      "total_servicios": 759662.28,
+      "total_ventas": 378094.07
+    },
+    {
+      "categoria": "K",
+      "ingresos_brutos_anuales_max": 82370281.28,
+      "impuesto_servicios": 890325.83,
+      "impuesto_ventas": 296775.28,
+      "aporte_sipa": 102823.23,
+      "obra_social": 57538.06,
+      "total_servicios": 1050687.12,
+      "total_ventas": 457136.57
+    }
+  ]
+}
