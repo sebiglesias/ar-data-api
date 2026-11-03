@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T00:12:15Z",
+  "updated_at": "2026-11-03T13:17:06Z",
   "currency": "ARS",
   "base": "USD",
   "brechas_vs_oficial_pct": {
@@ -13,49 +13,49 @@
       "compra": 1515,
       "venta": 1565,
       "spread_pct": 3.3,
-      "fecha_actualizacion": "2026-11-02T18:00:00.000Z"
+      "fecha_actualizacion": "2026-11-03T10:00:00.000Z"
     },
     "blue": {
       "nombre": "Blue",
       "compra": 1545,
       "venta": 1565,
       "spread_pct": 1.29,
-      "fecha_actualizacion": "2026-11-02T20:58:00.000Z"
+      "fecha_actualizacion": "2026-11-03T12:57:00.000Z"
     },
     "bolsa": {
       "nombre": "Bolsa",
       "compra": 1556.2,
       "venta": 1579.9,
       "spread_pct": 1.52,
-      "fecha_actualizacion": "2026-11-02T20:58:00.000Z"
+      "fecha_actualizacion": "2026-11-03T12:57:00.000Z"
     },
     "contadoconliqui": {
       "nombre": "Contado con liquidación",
       "compra": 1663.2,
       "venta": 1670,
       "spread_pct": 0.41,
-      "fecha_actualizacion": "2026-11-02T20:58:00.000Z"
+      "fecha_actualizacion": "2026-11-03T12:57:00.000Z"
     },
     "mayorista": {
       "nombre": "Mayorista",
       "compra": 1536.5,
       "venta": 1545.5,
       "spread_pct": 0.59,
-      "fecha_actualizacion": "2026-11-02T16:01:00.000Z"
+      "fecha_actualizacion": "2026-11-03T09:42:00.000Z"
     },
     "cripto": {
       "nombre": "Cripto",
-      "compra": 1652.02,
-      "venta": 1655.71,
-      "spread_pct": 0.22,
-      "fecha_actualizacion": "2026-11-02T20:58:00.000Z"
+      "compra": 1649.33,
+      "venta": 1652.7,
+      "spread_pct": 0.2,
+      "fecha_actualizacion": "2026-11-03T12:57:00.000Z"
     },
     "tarjeta": {
       "nombre": "Tarjeta",
       "compra": 1969.5,
       "venta": 2034.5,
       "spread_pct": 3.3,
-      "fecha_actualizacion": "2026-11-02T18:00:00.000Z"
+      "fecha_actualizacion": "2026-11-03T10:00:00.000Z"
     }
   }
 }
