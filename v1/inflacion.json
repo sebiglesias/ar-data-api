@@ -1,15 +1,11 @@
 {
-  "updated_at": "2026-11-12T22:58:32Z",
+  "updated_at": "2026-11-13T04:08:31Z",
   "source": "INDEC / BCRA",
-  "ultimo_ipc_mensual_pct": 1.9,
-  "ultimo_periodo": "2026-09-30",
+  "ultimo_ipc_mensual_pct": 2.2,
+  "ultimo_periodo": "2026-10-31",
   "tasa_politica_monetaria_tna_pct": 29.0,
   "tasa_plazo_fijo_promedio_tna_pct": 26.5,
   "serie_ipc_reciente": [
-    {
-      "fecha": "2026-04-30",
-      "valor": 2.6
-    },
     {
       "fecha": "2026-05-31",
       "valor": 2.1
@@ -29,6 +25,10 @@
     {
       "fecha": "2026-09-30",
       "valor": 1.9
+    },
+    {
+      "fecha": "2026-10-31",
+      "valor": 2.2
     }
   ]
 }

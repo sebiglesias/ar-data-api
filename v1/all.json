@@ -1,10 +1,10 @@
 {
   "api": "ar-data-api",
   "version": "1.0.0",
-  "updated_at": "2026-11-12T22:58:32Z",
+  "updated_at": "2026-11-13T04:08:31Z",
   "documentation": "https://sebiglesias.com.ar/ar-data-api/",
   "dolar": {
-    "updated_at": "2026-11-12T22:58:32Z",
+    "updated_at": "2026-11-13T04:08:31Z",
     "currency": "ARS",
     "base": "USD",
     "brechas_vs_oficial_pct": {
@@ -65,17 +65,13 @@
     }
   },
   "inflacion": {
-    "updated_at": "2026-11-12T22:58:32Z",
+    "updated_at": "2026-11-13T04:08:31Z",
     "source": "INDEC / BCRA",
-    "ultimo_ipc_mensual_pct": 1.9,
-    "ultimo_periodo": "2026-09-30",
+    "ultimo_ipc_mensual_pct": 2.2,
+    "ultimo_periodo": "2026-10-31",
     "tasa_politica_monetaria_tna_pct": 29.0,
     "tasa_plazo_fijo_promedio_tna_pct": 26.5,
     "serie_ipc_reciente": [
-      {
-        "fecha": "2026-04-30",
-        "valor": 2.6
-      },
       {
         "fecha": "2026-05-31",
         "valor": 2.1
@@ -95,11 +91,15 @@
       {
         "fecha": "2026-09-30",
         "valor": 1.9
+      },
+      {
+        "fecha": "2026-10-31",
+        "valor": 2.2
       }
     ]
   },
   "monotributo": {
-    "updated_at": "2026-11-12T22:58:32Z",
+    "updated_at": "2026-11-13T04:08:31Z",
     "organisme": "ARCA (Agencia de Recaudación y Control Aduanero)",
     "currency": "ARS",
     "vigencia": "2026",
@@ -217,7 +217,7 @@
     ]
   },
   "unidades_legales": {
-    "updated_at": "2026-11-12T22:58:32Z",
+    "updated_at": "2026-11-13T04:08:31Z",
     "currency": "ARS",
     "unidades": {
       "UMA_CPACF_CSJN": {
@@ -249,7 +249,7 @@
     }
   },
   "feriados": {
-    "updated_at": "2026-11-12T22:58:32Z",
+    "updated_at": "2026-11-13T04:08:31Z",
     "year": 2026,
     "country": "AR",
     "feriados": [
