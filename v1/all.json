@@ -1,16 +1,16 @@
 {
   "api": "ar-data-api",
   "version": "1.0.0",
-  "updated_at": "2026-11-13T13:38:48Z",
+  "updated_at": "2026-11-13T23:01:47Z",
   "documentation": "https://sebiglesias.com.ar/ar-data-api/",
   "dolar": {
-    "updated_at": "2026-11-13T13:38:48Z",
+    "updated_at": "2026-11-13T23:01:47Z",
     "currency": "ARS",
     "base": "USD",
     "brechas_vs_oficial_pct": {
-      "blue": -0.32,
-      "mep": 0.24,
-      "ccl": 6.27
+      "blue": 0.32,
+      "mep": 0.69,
+      "ccl": 6.49
     },
     "cotizaciones": {
       "oficial": {
@@ -18,54 +18,54 @@
         "compra": 1520,
         "venta": 1570,
         "spread_pct": 3.29,
-        "fecha_actualizacion": "2026-11-12T10:00:00.000Z"
+        "fecha_actualizacion": "2026-11-13T18:00:00.000Z"
       },
       "blue": {
         "nombre": "Blue",
-        "compra": 1545,
-        "venta": 1565,
+        "compra": 1555,
+        "venta": 1575,
         "spread_pct": 1.29,
-        "fecha_actualizacion": "2026-11-13T12:57:00.000Z"
+        "fecha_actualizacion": "2026-11-13T20:58:00.000Z"
       },
       "bolsa": {
         "nombre": "Bolsa",
-        "compra": 1570.7,
-        "venta": 1573.8,
-        "spread_pct": 0.2,
-        "fecha_actualizacion": "2026-11-13T12:57:00.000Z"
+        "compra": 1575.5,
+        "venta": 1580.9,
+        "spread_pct": 0.34,
+        "fecha_actualizacion": "2026-11-13T20:58:00.000Z"
       },
       "contadoconliqui": {
         "nombre": "Contado con liquidación",
-        "compra": 1663.4,
-        "venta": 1668.4,
-        "spread_pct": 0.3,
-        "fecha_actualizacion": "2026-11-13T12:57:00.000Z"
+        "compra": 1668.2,
+        "venta": 1671.9,
+        "spread_pct": 0.22,
+        "fecha_actualizacion": "2026-11-13T20:58:00.000Z"
       },
       "mayorista": {
         "nombre": "Mayorista",
-        "compra": 1536.5,
-        "venta": 1545.5,
+        "compra": 1534.5,
+        "venta": 1543.5,
         "spread_pct": 0.59,
-        "fecha_actualizacion": "2026-11-12T15:57:00.000Z"
+        "fecha_actualizacion": "2026-11-13T15:31:00.000Z"
       },
       "cripto": {
         "nombre": "Cripto",
-        "compra": 1669.16,
-        "venta": 1673.18,
-        "spread_pct": 0.24,
-        "fecha_actualizacion": "2026-11-13T12:57:00.000Z"
+        "compra": 1663.04,
+        "venta": 1670.45,
+        "spread_pct": 0.45,
+        "fecha_actualizacion": "2026-11-13T20:58:00.000Z"
       },
       "tarjeta": {
         "nombre": "Tarjeta",
         "compra": 1976,
         "venta": 2041,
         "spread_pct": 3.29,
-        "fecha_actualizacion": "2026-11-12T10:00:00.000Z"
+        "fecha_actualizacion": "2026-11-13T18:00:00.000Z"
       }
     }
   },
   "inflacion": {
-    "updated_at": "2026-11-13T13:38:48Z",
+    "updated_at": "2026-11-13T23:01:47Z",
     "source": "INDEC / BCRA",
     "ultimo_ipc_mensual_pct": 2.2,
     "ultimo_periodo": "2026-10-31",
@@ -99,7 +99,7 @@
     ]
   },
   "monotributo": {
-    "updated_at": "2026-11-13T13:38:48Z",
+    "updated_at": "2026-11-13T23:01:47Z",
     "organisme": "ARCA (Agencia de Recaudación y Control Aduanero)",
     "currency": "ARS",
     "vigencia": "2026",
@@ -217,7 +217,7 @@
     ]
   },
   "unidades_legales": {
-    "updated_at": "2026-11-13T13:38:48Z",
+    "updated_at": "2026-11-13T23:01:47Z",
     "currency": "ARS",
     "unidades": {
       "UMA_CPACF_CSJN": {
@@ -249,7 +249,7 @@
     }
   },
   "feriados": {
-    "updated_at": "2026-11-13T13:38:48Z",
+    "updated_at": "2026-11-13T23:01:47Z",
     "year": 2026,
     "country": "AR",
     "feriados": [
