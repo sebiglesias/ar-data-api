@@ -1,10 +1,10 @@
 {
   "api": "ar-data-api",
   "version": "1.0.0",
-  "updated_at": "2026-11-13T23:01:47Z",
+  "updated_at": "2026-11-14T04:05:34Z",
   "documentation": "https://sebiglesias.com.ar/ar-data-api/",
   "dolar": {
-    "updated_at": "2026-11-13T23:01:47Z",
+    "updated_at": "2026-11-14T04:05:34Z",
     "currency": "ARS",
     "base": "USD",
     "brechas_vs_oficial_pct": {
@@ -65,7 +65,7 @@
     }
   },
   "inflacion": {
-    "updated_at": "2026-11-13T23:01:47Z",
+    "updated_at": "2026-11-14T04:05:34Z",
     "source": "INDEC / BCRA",
     "ultimo_ipc_mensual_pct": 2.2,
     "ultimo_periodo": "2026-10-31",
@@ -99,7 +99,7 @@
     ]
   },
   "monotributo": {
-    "updated_at": "2026-11-13T23:01:47Z",
+    "updated_at": "2026-11-14T04:05:34Z",
     "organisme": "ARCA (Agencia de Recaudación y Control Aduanero)",
     "currency": "ARS",
     "vigencia": "2026",
@@ -217,7 +217,7 @@
     ]
   },
   "unidades_legales": {
-    "updated_at": "2026-11-13T23:01:47Z",
+    "updated_at": "2026-11-14T04:05:34Z",
     "currency": "ARS",
     "unidades": {
       "UMA_CPACF_CSJN": {
@@ -249,7 +249,7 @@
     }
   },
   "feriados": {
-    "updated_at": "2026-11-13T23:01:47Z",
+    "updated_at": "2026-11-14T04:05:34Z",
     "year": 2026,
     "country": "AR",
     "feriados": [
