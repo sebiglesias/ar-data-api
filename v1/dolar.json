@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-11-27T01:17:37Z",
+  "updated_at": "2026-11-27T15:50:33Z",
   "currency": "ARS",
   "base": "USD",
   "brechas_vs_oficial_pct": {
-    "blue": 5.23,
-    "mep": 2.55,
-    "ccl": 8.79
+    "blue": 5.56,
+    "mep": 2.79,
+    "ccl": 8.52
   },
   "cotizaciones": {
     "oficial": {
       "nombre": "Oficial",
-      "compra": 1575,
-      "venta": 1625,
-      "spread_pct": 3.17,
-      "fecha_actualizacion": "2026-11-26T18:00:00.000Z"
+      "compra": 1570,
+      "venta": 1620,
+      "spread_pct": 3.18,
+      "fecha_actualizacion": "2026-11-27T12:00:00.000Z"
     },
     "blue": {
       "nombre": "Blue",
       "compra": 1690,
       "venta": 1710,
       "spread_pct": 1.18,
-      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
+      "fecha_actualizacion": "2026-11-27T14:59:00.000Z"
     },
     "bolsa": {
       "nombre": "Bolsa",
-      "compra": 1657.2,
-      "venta": 1666.4,
-      "spread_pct": 0.56,
-      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
+      "compra": 1661.7,
+      "venta": 1665.2,
+      "spread_pct": 0.21,
+      "fecha_actualizacion": "2026-11-27T14:59:00.000Z"
     },
     "contadoconliqui": {
       "nombre": "Contado con liquidación",
-      "compra": 1765.6,
-      "venta": 1767.9,
-      "spread_pct": 0.13,
-      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
+      "compra": 1757.3,
+      "venta": 1758,
+      "spread_pct": 0.04,
+      "fecha_actualizacion": "2026-11-27T14:59:00.000Z"
     },
     "mayorista": {
       "nombre": "Mayorista",
@@ -45,17 +45,17 @@
     },
     "cripto": {
       "nombre": "Cripto",
-      "compra": 1747.94,
-      "venta": 1752.96,
-      "spread_pct": 0.29,
-      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
+      "compra": 1749.02,
+      "venta": 1755.61,
+      "spread_pct": 0.38,
+      "fecha_actualizacion": "2026-11-27T14:59:00.000Z"
     },
     "tarjeta": {
       "nombre": "Tarjeta",
-      "compra": 2047.5,
-      "venta": 2112.5,
-      "spread_pct": 3.17,
-      "fecha_actualizacion": "2026-11-26T18:00:00.000Z"
+      "compra": 2041,
+      "venta": 2106,
+      "spread_pct": 3.18,
+      "fecha_actualizacion": "2026-11-27T12:00:00.000Z"
     }
   }
 }
