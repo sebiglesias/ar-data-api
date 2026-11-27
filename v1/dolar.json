@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-26T16:01:47Z",
+  "updated_at": "2026-11-27T01:17:37Z",
   "currency": "ARS",
   "base": "USD",
   "brechas_vs_oficial_pct": {
-    "blue": 4.62,
-    "mep": 2.63,
+    "blue": 5.23,
+    "mep": 2.55,
     "ccl": 8.79
   },
   "cotizaciones": {
@@ -13,49 +13,49 @@
       "compra": 1575,
       "venta": 1625,
       "spread_pct": 3.17,
-      "fecha_actualizacion": "2026-11-26T12:00:00.000Z"
+      "fecha_actualizacion": "2026-11-26T18:00:00.000Z"
     },
     "blue": {
       "nombre": "Blue",
-      "compra": 1680,
-      "venta": 1700,
-      "spread_pct": 1.19,
-      "fecha_actualizacion": "2026-11-26T14:59:00.000Z"
+      "compra": 1690,
+      "venta": 1710,
+      "spread_pct": 1.18,
+      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
     },
     "bolsa": {
       "nombre": "Bolsa",
-      "compra": 1661.7,
-      "venta": 1667.8,
-      "spread_pct": 0.37,
-      "fecha_actualizacion": "2026-11-26T14:59:00.000Z"
+      "compra": 1657.2,
+      "venta": 1666.4,
+      "spread_pct": 0.56,
+      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
     },
     "contadoconliqui": {
       "nombre": "Contado con liquidación",
       "compra": 1765.6,
       "venta": 1767.9,
       "spread_pct": 0.13,
-      "fecha_actualizacion": "2026-11-26T14:59:00.000Z"
+      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
     },
     "mayorista": {
       "nombre": "Mayorista",
-      "compra": 1595,
-      "venta": 1604,
-      "spread_pct": 0.56,
-      "fecha_actualizacion": "2026-11-26T10:01:00.000Z"
+      "compra": 1592.5,
+      "venta": 1601.5,
+      "spread_pct": 0.57,
+      "fecha_actualizacion": "2026-11-26T16:13:00.000Z"
     },
     "cripto": {
       "nombre": "Cripto",
-      "compra": 1750.77,
-      "venta": 1761.65,
-      "spread_pct": 0.62,
-      "fecha_actualizacion": "2026-11-26T14:59:00.000Z"
+      "compra": 1747.94,
+      "venta": 1752.96,
+      "spread_pct": 0.29,
+      "fecha_actualizacion": "2026-11-26T20:56:00.000Z"
     },
     "tarjeta": {
       "nombre": "Tarjeta",
       "compra": 2047.5,
       "venta": 2112.5,
       "spread_pct": 3.17,
-      "fecha_actualizacion": "2026-11-26T12:00:00.000Z"
+      "fecha_actualizacion": "2026-11-26T18:00:00.000Z"
     }
   }
 }
